@@ -1,0 +1,14 @@
+doctype
+html
+  head
+    title XD Cloud API Example
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      h1 XD Cloud API Example
+    .button-group
+      form(action='/document', method='post', name="form")
+        input(id='documentId',type='text',value='',placeholder='Insert XD document ID here',name='documentId')
+        input(type='submit',value='Submit')
+    .canvas
+      p #{response}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>Adobe XD Cloud API Example</title>
+</head>
+
+<body>
+        <div>
+                <h1>Adobe XD Cloud API Example</h1>
+        </div>
+        <div>
+                <!-- <button onclick="location.href='/profile'">Get Document Info</button> -->
+                <form method="POST" action="/document">
+                        <input name="text" placeholder="Enter XD Cloud document ID here" style="width:500px">
+                        <input type="submit">
+                </form>
+        </div>
+        <div>
+                {{ response }}
+        </div>
+</body>
+
+</html>
